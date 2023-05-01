@@ -1,4 +1,5 @@
-Usage:
+**Usage**
+Make a fork of the repository first
 
 Genshin Check in page:
 https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481
