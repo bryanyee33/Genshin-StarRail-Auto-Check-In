@@ -13,7 +13,7 @@ https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e20230330154031
 3. In the console, type: document.cookie
 4. Copy the cookie into Settings -> Secrets and variables -> Actions -> New repository secret
    with Name as OS_COOKIE and Secret as the copied cookie
-5. Deploy & Profit
+5. Profit
 
 All credits go to https://github.com/atomicptr/hoyo-daily-logins-helper.
 Modified script to make it simpler & auto checkin both Genshin and Star Rail accounts at once.
