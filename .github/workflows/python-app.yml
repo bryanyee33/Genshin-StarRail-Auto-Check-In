@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "1 20 * * *"  # 4.01 am
-    - cron: "1 8 * * *"   # 4.01 pm
+#    - cron: "1 8 * * *"   # 4.01 pm
 
 env:
   OS_COOKIE: ${{ secrets.OS_COOKIE }}
