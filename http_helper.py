@@ -5,7 +5,7 @@ import logging
 import requests
 from requests import HTTPError, Response
 
-default_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+default_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
                   
 def get_user_agent():
     if "USER_AGENT" in os.environ:
