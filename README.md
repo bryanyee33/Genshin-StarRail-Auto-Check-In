@@ -15,6 +15,9 @@ https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e20230330154031
    with Name as OS_COOKIE and Secret as the copied cookie
 5. Profit
 
+Note:
+For multiple accounts, separate the cookies with "," (no quotes and spaces between the cookies)
+
 All credits go to https://github.com/atomicptr/hoyo-daily-logins-helper.
 Modified script to make it simpler & auto checkin both Genshin and Star Rail accounts at once.
 Runs daily at 4.01am (+8 UTC)
