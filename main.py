@@ -9,14 +9,18 @@ logging.basicConfig(
 )
 
 DEFAULT_LANGUAGE = "en-us"
-OS_COOKIE = os.environ.get('OS_COOKIE')
+OS_COOKIE = os.environ.get('OS_COOKIE').split("#")
+games = None
 
-games = ["genshin", "starrail"] # honkai and themis also available
+if "GAME_CHOICE" in os.environ:
+    games = [s.split(",") for s in os.environ["GAME_CHOICE"].split("#")]
+else:
+    games = [["genshin", "starrail"]] * len(OS_COOKIE) # honkai and themis also available
 
-for i, cookie in enumerate(OS_COOKIE.split(","), start = 1):
-    for game in games:
+for i, cookie in enumerate(OS_COOKIE):
+    for game in games[i]:
         game_perform_checkin(
-            i,
+            i + 1,
             game,
             cookie,
             DEFAULT_LANGUAGE
