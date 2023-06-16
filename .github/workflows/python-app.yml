@@ -8,6 +8,7 @@ on:
 
 env:
   OS_COOKIE: ${{ secrets.OS_COOKIE }}
+  GAME_CHOICE: ${{ secrets.GAME_CHOICE }}
 
 jobs:
   run-python:
