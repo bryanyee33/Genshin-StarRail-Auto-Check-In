@@ -15,8 +15,14 @@ https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e20230330154031
    with Name as OS_COOKIE and Secret as the copied cookie
 5. Profit
 
-Note:
-For multiple accounts, separate the cookies with "," (no quotes and spaces between the cookies)
+Notes:
+For multiple accounts, separate the cookies with "#" (no quotes and spaces between the cookies)
+To specify games per account, add a new repository secret "GAME_CHOICE", by using "," to separate the games, and "#" to separate the accounts.
+
+Eg: genshin,themis#starrail,honkai
+where account 1 (based on cookie order) checks in for genshin and themis, and account 2 checks in for starrail and honkai
+
+If "GAME_CHOICE" is used, all accounts require their games to be specified.
 
 All credits go to https://github.com/atomicptr/hoyo-daily-logins-helper.
 Modified script to make it simpler & auto checkin both Genshin and Star Rail accounts at once.
