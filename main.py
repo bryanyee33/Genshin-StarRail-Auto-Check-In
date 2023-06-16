@@ -12,7 +12,7 @@ DEFAULT_LANGUAGE = "en-us"
 OS_COOKIE = os.environ.get('OS_COOKIE').split("#")
 games = None
 
-if "GAME_CHOICE" in os.environ:
+if os.environ["GAME_CHOICE"]:
     games = [s.split(",") for s in os.environ["GAME_CHOICE"].split("#")]
 else:
     games = [["genshin", "starrail"]] * len(OS_COOKIE) # honkai and themis also available
