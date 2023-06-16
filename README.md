@@ -16,7 +16,7 @@ https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e20230330154031
 5. Profit
 
 Notes:
-For multiple accounts, separate the cookies with "#" (no quotes and spaces between the cookies)
+For multiple accounts, separate the cookies with "#" (no quotes and spaces between the cookies).
 To specify games per account, add a new repository secret "GAME_CHOICE", by using "," to separate the games, and "#" to separate the accounts.
 
 Eg: genshin,themis#starrail,honkai
